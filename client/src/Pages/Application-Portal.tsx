@@ -11,7 +11,7 @@ function Application_Portal() {
         <h2>Get Started</h2>
         <h3>Welcome. Apply in just minutes</h3>
         <hr />
-        <div className="Body">
+        <div className="Loan-Type">
           <label>Loan types *</label>
           <select>
             <option value=""></option>

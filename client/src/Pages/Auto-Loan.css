@@ -1,0 +1,86 @@
+.Page {
+    display: flex;
+    padding-left: 300px;
+    padding-right: 300px;
+    font-family: Arial, Geneva, Helvetica, sans-serif;
+}
+
+.Form {
+    background-color: #f9f7f4;
+}
+
+.Form h1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-weight: lighter;
+    color: #DC1431;
+}
+
+.Form h3 
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-weight: lighter;
+    color: #000000;
+}
+
+.Form label 
+{
+    display: flex;
+    flex-direction: row;
+    padding-left: 395px;
+    padding-top: 25px;
+    justify-content: left;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.Form input
+{
+    margin: auto;
+    display: block;
+    height: 30px;
+    width: 500px;
+}
+
+.Form select 
+{
+    margin: auto;
+    display: block;
+    height: 36px;
+    width: 507.5px;
+}
+
+.Body {
+    padding-left: 30px;
+    display: flex;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.Body label {
+    font-size: 15px;
+}
+
+.Body select {
+    height: 40px; 
+    width: 400px;
+}
+
+button {
+    padding-top: 20px;
+    border: none;
+    background-color: rgb(220, 20, 49);
+    width: 160px;
+    height: 60px;
+    font-size: 24px;
+}
+
+button:hover {
+    cursor:pointer;
+    background-color: #2E2EFF;
+}

@@ -6,7 +6,11 @@
     font-family: Arial, Geneva, Helvetica, sans-serif;
 }
 
-.Body {
+.Form {
+    background-color: #f9f7f4;
+}
+
+.Loan-Type {
     padding-left: 30px;
     display: flex;
     flex-direction: column;
@@ -14,15 +18,11 @@
     padding-bottom: 25px;
 }
 
-.Form {
-    background-color: #f9f7f4;
-}
-
-.Body label {
+.Loan-Type label {
     font-size: 15px;
 }
 
-.Body select {
+.Loan-Type select {
     height: 40px; 
     width: 400px;
 }
