@@ -1,0 +1,15 @@
+.Body {
+    display: flex;
+    flex-direction: column;
+    padding-left: 300px;
+    padding-right: 300px;
+}
+
+.Form {
+    background-color: #f9f7f4;
+}
+
+ul {
+    font-size: 0px;
+}
+
