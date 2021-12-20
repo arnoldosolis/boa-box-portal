@@ -21,6 +21,12 @@ function Application_Portal() {
           </select>
         </div>
         <hr />
+        <div className="continue-return-buttons">
+          <button className="continue-button">Continue</button>
+          <button className="return-to-overview-button">
+            Return to overview
+          </button>
+        </div>
       </div>
     </div>
   );
