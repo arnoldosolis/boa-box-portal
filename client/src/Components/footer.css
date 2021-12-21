@@ -1,0 +1,17 @@
+.Body {
+    background-color: #F2F2F2;
+}
+
+.privacy-security-share {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: 440px
+}
+
+.privacy-security-share h3{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: #0052C2;
+    font-size: 12px;
+}

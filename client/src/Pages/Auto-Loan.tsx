@@ -1,7 +1,12 @@
 import Boa_plain_bar from "../Components/boa-plain-bar";
 import Boa_red_bar from "../Components/boa-red-bar";
+import Footer from "../Components/footer";
+import { useNavigate } from "react-router-dom";
 import "./Auto-Loan.css";
+
 function Auto_Loan() {
+  let navigate = useNavigate();
+
   return (
     <div className="Page">
       <Boa_plain_bar />
@@ -29,7 +34,7 @@ function Auto_Loan() {
           <option value="V">V</option>
         </select>
         <label>Phone number</label>
-	<input type="text" />
+        <input type="text" />
         <label>Phone type</label>
         <select>
           <option value=""></option>
@@ -60,8 +65,15 @@ function Auto_Loan() {
           <option value="Unmarried">Unmarried</option>
           <option value="Widowed">Widowed</option>
         </select>
-        <button>Done</button>
+        <button
+          onClick={() => {
+            navigate("/");
+          }}
+        >
+          Done
+        </button>
       </div>
+      <Footer />
     </div>
   );
 }
