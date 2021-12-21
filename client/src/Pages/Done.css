@@ -1,0 +1,32 @@
+.Done {
+    display: flex;
+    flex-direction: column;
+    padding-left: 300px;
+    padding-right: 300px;
+    font-family: Arial, Geneva, Helvetica, sans-serif;
+}
+
+.done-body {
+    background-color: #f9f7f4;
+}
+
+.application-submitted {
+    background-color: #0E1D3A;
+    color: #fff;
+    padding: 75px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.what-happens-next {
+    padding-left: 30px;
+}
+
+.what-happens-next h3{
+    font-size: 30px;
+}
+
+.what-happens-next li{
+    font-size: 20px;
+    padding-bottom: 20px;
+}
