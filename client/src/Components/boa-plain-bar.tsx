@@ -9,6 +9,7 @@ function Boa_plain_bar() {
           width: "300px",
           paddingTop: "10px",
           paddingLeft: "20px",
+          paddingBottom: "10px",
         }}
         src={boa_plain_bar_logo}
       />
