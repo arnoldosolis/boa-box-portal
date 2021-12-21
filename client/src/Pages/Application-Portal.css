@@ -48,6 +48,10 @@
     width: 400px;
 }
 
+.Loan-Type select {
+    font-size: 20px;
+}
+
 .continue-return-buttons
 {
     display: flex;

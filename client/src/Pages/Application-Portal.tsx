@@ -19,9 +19,10 @@ function Application_Portal() {
           <label>Loan types *</label>
           <select>
             <option value=""></option>
-            <option value="Home Loan">Home Loan</option>
-            <option value="Auto Loan">Auto Loan</option>
-            <option value="Personal Loan">Personal Loan</option>
+            <option value="Dealer purchase">Dealer purchase</option>
+            <option value="Refinance">Refinance</option>
+            <option value="Lease buyout">Lease buyout</option>
+            <option value="Private party">Private party</option>
           </select>
         </div>
         <hr />
