@@ -8,7 +8,7 @@ function Auto_Loan() {
   let navigate = useNavigate();
 
   return (
-    <div className="Page">
+    <div className="Auto-Loan">
       <Boa_plain_bar />
       <Boa_red_bar loan="Auto Loan" />
       <div className="Form">

@@ -1,0 +1,12 @@
+.boa-red-bar-ul {
+    background-color: #dc1431;
+    height: 60px;
+    padding-left: 25px;
+}
+
+.boa-red-bar-li {
+    color: #FFF;
+    list-style-type: none;
+    padding-top: 15px;
+    font-size: 22px;
+}

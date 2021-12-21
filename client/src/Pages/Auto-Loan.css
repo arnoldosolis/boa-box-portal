@@ -1,5 +1,6 @@
-.Page {
+.Auto-Loan {
     display: flex;
+    flex-direction: column;
     padding-left: 300px;
     padding-right: 300px;
     font-family: Arial, Geneva, Helvetica, sans-serif;
@@ -71,8 +72,7 @@
     width: 400px;
 }
 
-button {
-    padding-top: 20px;
+.Auto-Loan button {
     border: none;
     background-color: #990000;
     color: #fff;
@@ -84,7 +84,11 @@ button {
     margin-bottom: 30px;
 }
 
-button:hover {
+.Auto-Loan button:hover {
     cursor:pointer;
     background-color: #DC1431;
+}
+
+ul {
+    font-size: 0px;
 }
