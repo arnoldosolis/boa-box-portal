@@ -28,3 +28,18 @@ client.users
   .catch((err) => console.log("Got an error!", err));
 
 // Create a folder and upload file attatchments
+app.post("/upload", (req, res) => {
+  const newFolder = req.body.newFolder;
+  const file_Name = req.body.file_name;
+  const uniqueFile = req.body.uniqueFile;
+
+  client.folders.create("0", newFolder).then((folder) => {
+    console.log(folder);
+    res.send(folder);
+  });
+
+  client.files.uploadFile("0", file_Name, uniqueFile).then((file) => {
+    console.log(file);
+    res.send(file);
+  });
+});
