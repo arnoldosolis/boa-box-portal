@@ -67,7 +67,7 @@ function Auto_Loan() {
         </select>
         <button
           onClick={() => {
-            navigate("/");
+            navigate("/Done");
           }}
         >
           Done
