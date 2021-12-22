@@ -28,18 +28,23 @@ client.users
   .catch((err) => console.log("Got an error!", err));
 
 // Create a folder and upload file attatchments
+// Create a folder and upload file attatchments
+var newFolder;
+var fileName;
+var uniqueFile;
+
 app.post("/upload", (req, res) => {
-  const newFolder = req.body.newFolder;
-  const file_Name = req.body.file_name;
-  const uniqueFile = req.body.uniqueFile;
-
-  client.folders.create("0", newFolder).then((folder) => {
-    console.log(folder);
-    res.send(folder);
-  });
-
-  client.files.uploadFile("0", file_Name, uniqueFile).then((file) => {
-    console.log(file);
-    res.send(file);
-  });
+  newFolder = "test";
+  fileName = "ssn";
+  // uniqueFile = req.body.uniqueFile;
 });
+
+client.folders.create("0", "Solis_Arnoldo_1234").then((folder) => {
+  console.log(folder);
+});
+
+client.files
+  .uploadFile("0", "id", "../client/src/Images/sample_id.jpg")
+  .then((file) => {
+    console.log(file);
+  });

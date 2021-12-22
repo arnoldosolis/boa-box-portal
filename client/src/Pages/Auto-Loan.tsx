@@ -1,11 +1,27 @@
 import Boa_plain_bar from "../Components/boa-plain-bar";
 import Boa_red_bar from "../Components/boa-red-bar";
 import Footer from "../Components/footer";
-import { useNavigate } from "react-router-dom";
 import "./Auto-Loan.css";
+
+import { useNavigate } from "react-router-dom";
+import { useState } from "react";
+import axios from "axios";
 
 function Auto_Loan() {
   let navigate = useNavigate();
+  const [uniqueFile, setUniqueFile] = useState<File>();
+  const [firstName, setFirstName] = useState<string>("");
+  const [lastName, setLastName] = useState<string>("");
+  const [ssn, setSSN] = useState<string>("");
+  const uploadApplication = () => {
+    axios
+      .post("http://localhost:3001/upload", {
+        newFolder: `${firstName}_${lastName}_${ssn}`,
+        fileName: "SSN",
+        uniqueFile: uniqueFile,
+      })
+      .then((response) => console.log(response));
+  };
 
   return (
     <div className="Auto-Loan">
@@ -18,11 +34,21 @@ function Auto_Loan() {
           yourself
         </h3>
         <label>First name</label>
-        <input type="text" />
+        <input
+          type="text"
+          onChange={(e) => {
+            setFirstName(e.target.value);
+          }}
+        />
         <label>Middle name</label>
         <input type="text" />
         <label>Last name</label>
-        <input type="text" />
+        <input
+          type="text"
+          onChange={(e) => {
+            setLastName(e.target.value);
+          }}
+        />
         <label>Suffix (optional)</label>
         <select>
           <option value=""></option>
@@ -54,7 +80,12 @@ function Auto_Loan() {
           </option>
         </select>
         <label>Social Security</label>
-        <input type="text" />
+        <input
+          type="text"
+          onChange={(e) => {
+            setSSN(e.target.value);
+          }}
+        />
         <label>Date of birth</label>
         <input type="text" placeholder="MM/DD/YYYY" />
         <label>What is your marital status?</label>
@@ -65,8 +96,19 @@ function Auto_Loan() {
           <option value="Unmarried">Unmarried</option>
           <option value="Widowed">Widowed</option>
         </select>
+        <label>Please upload a photo of your ID</label>
+        <form encType="multipart">
+          <input
+            type="file"
+            onChange={(e) => {
+              // @ts-ignore: Object is possibly 'null'.
+              setUniqueFile(e.target.files[0]);
+            }}
+          />
+        </form>
         <button
           onClick={() => {
+            uploadApplication();
             navigate("/Done");
           }}
         >

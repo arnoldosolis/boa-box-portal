@@ -1,12 +1,12 @@
-import { useNavigate } from "react-router-dom";
 import Boa_plain_bar from "../Components/boa-plain-bar";
 import Boa_red_bar from "../Components/boa-red-bar";
 import Footer from "../Components/footer";
 import "./Application-Portal.css";
 
+import { useNavigate } from "react-router-dom";
+
 function Application_Portal() {
   let navigate = useNavigate();
-
   return (
     <div className="Application-Portal">
       <Boa_plain_bar />
